@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main-sec">
+      <div class="weather">
+        <div class="search-box">
+          <input type="text" placeholder="Enter City Name" id="input" />
+          <div class="search-icon" id="searchBtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              id="search"
+              width="30"
+              fill="#c4c4c4"
+            >
+              <path
+                d="M3.624,15a8.03,8.03,0,0,0,10.619.659l5.318,5.318a1,1,0,0,0,1.414-1.414l-5.318-5.318A8.04,8.04,0,0,0,3.624,3.624,8.042,8.042,0,0,0,3.624,15Zm1.414-9.96a6.043,6.043,0,1,1-1.77,4.274A6,6,0,0,1,5.038,5.038Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="weather-img-box">
+          <div class="weather-img">
+            <img src="./images/clouds.png" alt="" id="weatherImg" />
+          </div>
+          <div class="info">
+            <h1>
+              <span id="city">Dhaka</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="none"
+                viewBox="0 0 24 24"
+                id="send"
+              >
+                <path
+                  fill="#2d3436"
+                  fill-rule="evenodd"
+                  d="M20.2435 1.35786C21.7322 0.836829 23.1632 2.26782 22.6422 3.75649L16.4356 21.4894C15.8724 23.0986 13.6311 23.19 12.9387 21.632L9.7459 14.4483C9.70744 14.3618 9.63826 14.2926 9.55174 14.2541L2.36797 11.0613C0.81001 10.3689 0.901447 8.12759 2.51063 7.56438L20.2435 1.35786ZM22.0303 3.03033C22.3232 2.73744 22.3232 2.26256 22.0303 1.96967C21.7374 1.67678 21.2626 1.67678 20.9697 1.96967L9.96967 12.9697C9.67678 13.2626 9.67678 13.7374 9.96967 14.0303C10.2626 14.3232 10.7374 14.3232 11.0303 14.0303L22.0303 3.03033Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </h1>
+            <h2 id="celsius">20<span>&deg;</span></h2>
+            <p id="description">Heavy intensity rain</p>
+          </div>
+        </div>
+        <div class="weather-info">
+          <div class="humidity">
+            <div class="humidity-img">
+              <img src="./images/humidity.png" alt="" />
+            </div>
+            <div class="info">
+              <h3 id="humidity">48%</h3>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="wind">
+            <div class="wind-img">
+              <img src="./images/wind.png" alt="" />
+            </div>
+            <div class="info">
+              <h3 id="wind">10.29 km/h</h3>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
