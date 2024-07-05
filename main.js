@@ -23,9 +23,9 @@ async function getData() {
 }
 
 async function renderData(data) {
-  console.log(data);
+  const temp = Math.round(data.main.temp - 273.15);
   city.innerHTML = data.name;
-  celsius.innerHTML = `${Math.round(data.main.temp)}<span>&deg;</span>`;
+  celsius.innerHTML = `${temp}<span>&deg;</span>`;
   description.innerHTML = data.weather[0].description.toUpperCase();
   humidity.innerHTML = `${data.main.humidity}%`;
   wind.innerHTML = `${data.wind.speed} km/h`;
